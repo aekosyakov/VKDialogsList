@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  VKTestExercise
+
+  Created by Alex Kosyakov on 1/22/18.
+  Copyright © 2018 Alex Kosyakov. All rights reserved.
+*/
+
+"Login" = "Авторизация";
+"Authorization Failed" = "Ошибка авторизации";
+"DialogListTitle" = "Сообщения";
+"Settings" = "Настройки";
+"Reset Data" = "Удалить данные";
+"Sign Out" = "Выход";
+"Turn Off Pushes" = "Отключить уведомления";
+"Turn On Pushes" = "Включить уведомления";
+"No_Dialogs" = "Нет диалогов";
+
+"Dialog_1" = "диалог";
+"Dialog2_5" = "диалога";
+"Dialog5_9" = "диалогов";
+
+"Wants_to_reset_history?" = "Вы действительно хотите очистить историю сообщений? Отменить это дейстие будет невозможно.";
+"Reset History" = "Очистить историю";
+
+"kPHOTO" = "Фотография";
+"kAUDIO" = "Аудиозапись";
+"kVIDEO" = "Видеозапись";
+"kDOC"   = "Документ";
+"kLINK"  = "Ссылка";
+"kMARKET" = "Товар";
+"kWALL"   = "Запись на стене";
+"kSHARE"  = "Сообщение";
+"kGIFT"   = "Подарок";
+"kSTICKER" = "Стикер";
+"GEO" = "Карта";
+"OK" = "Ок";
+"CANCEL" = "Отмена";

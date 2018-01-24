@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VKTMainController" id="BYZ-38-t0r" customClass="VKTMainController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RM7-hc-edL"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRR-9M-NW4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lKG-f4-na9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="33.733133433283363"/>
+        </scene>
+        <!--Auth Controller-->
+        <scene sceneID="Cav-mA-Wo2">
+            <objects>
+                <viewController storyboardIdentifier="VKTAuthController" id="jKl-X6-j9b" customClass="VKTAuthController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="adt-Ow-tRh"/>
+                        <viewControllerLayoutGuide type="bottom" id="sPW-9L-jgM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OBK-e1-rl2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gTr-0z-UKv">
+                                <rect key="frame" x="260" y="277" width="80" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="BHZ-OF-jZi"/>
+                                    <constraint firstAttribute="width" constant="80" id="cVk-fV-Ee6"/>
+                                </constraints>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-Ip-4S5">
+                                <rect key="frame" x="246" y="539" width="108" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NcX-Tw-Ygg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="mad-gk-5ua"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gTr-0z-UKv" firstAttribute="centerY" secondItem="OBK-e1-rl2" secondAttribute="centerY" id="Fm8-ci-kJu"/>
+                            <constraint firstItem="sPW-9L-jgM" firstAttribute="top" secondItem="wbe-Ip-4S5" secondAttribute="bottom" constant="31" id="fHn-9t-XZF"/>
+                            <constraint firstItem="wbe-Ip-4S5" firstAttribute="centerX" secondItem="OBK-e1-rl2" secondAttribute="centerX" id="g3i-B8-4lA"/>
+                            <constraint firstItem="gTr-0z-UKv" firstAttribute="centerX" secondItem="OBK-e1-rl2" secondAttribute="centerX" id="j3X-7b-BzZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="wbe-Ip-4S5" id="WlS-QV-JvZ"/>
+                        <outlet property="logoImageView" destination="gTr-0z-UKv" id="HkU-mV-JFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqR-xz-MfQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="33.733133433283363"/>
+        </scene>
+        <!--Dialogs List Controller-->
+        <scene sceneID="pxh-qD-3eM">
+            <objects>
+                <viewController storyboardIdentifier="VKTDialogsListController" id="BHZ-48-b1M" customClass="VKTDialogsListController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GSi-7I-bUc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hac-rZ-e3e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rct-AV-RAj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7bG-Gd-3uI" customClass="VKTSmartTableView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7bG-Gd-3uI" firstAttribute="leading" secondItem="rct-AV-RAj" secondAttribute="leading" id="0A0-3A-qxP"/>
+                            <constraint firstItem="7bG-Gd-3uI" firstAttribute="top" secondItem="rct-AV-RAj" secondAttribute="top" id="4nl-gi-jvc"/>
+                            <constraint firstItem="Hac-rZ-e3e" firstAttribute="top" secondItem="7bG-Gd-3uI" secondAttribute="bottom" id="gSn-TV-rEn"/>
+                            <constraint firstAttribute="trailing" secondItem="7bG-Gd-3uI" secondAttribute="trailing" id="oRq-g7-5CY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="7bG-Gd-3uI" id="mAG-KP-IhX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTR-3s-Rsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3368.8000000000002" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>

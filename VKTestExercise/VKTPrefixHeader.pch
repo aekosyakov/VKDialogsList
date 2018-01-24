@@ -1,0 +1,28 @@
+//
+//  VKTPrefixHeader.pch
+//  VKTestExercise
+//
+//  Created by Alex Kosyakov on 23.12.2017.
+//  Copyright © 2017 Alex Kosyakov. All rights reserved.
+//
+
+#ifndef VKTPrefixHeader_pch
+#define VKTPrefixHeader_pch
+#endif /* VKTPrefixHeader_pch */
+
+#import "UIView+Utils.h"
+#import "UIView+CoreAnimation.h"
+#import "UIStoryboard+ViewControllers.h"
+#import "VKTUserToken.h"
+#import "VKTColor.h"
+#import "VKTFont.h"
+#import "VKTImage.h"
+#import "VKTNavigationController.h"
+
+#import "UIViewController+Alerts.h"
+#import "UIViewController+MBProgressHUD.h"
+#import "UIViewController+NavigationItems.h"
+#import "VKTNetworkReachability.h"
+#import "UIView+LoadFromNib.h"
+#import "UIView+AutoresizingMask.h"
+

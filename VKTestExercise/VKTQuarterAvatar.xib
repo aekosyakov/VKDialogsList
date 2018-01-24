@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MKP-4z-JYQ" customClass="VKTAvatarView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xe7-XF-bcu">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YbR-ir-ta4" userLabel="1">
+                            <rect key="frame" x="0.0" y="0.0" width="149" height="149"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SAj-rF-IR3" userLabel="2">
+                            <rect key="frame" x="151" y="0.0" width="149" height="149"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4CV-Xz-ldI" userLabel="3">
+                            <rect key="frame" x="0.0" y="151" width="149" height="149"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qfK-Ra-kYK" userLabel="4">
+                            <rect key="frame" x="151" y="151" width="149" height="149"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4CV-Xz-ldI" firstAttribute="top" secondItem="YbR-ir-ta4" secondAttribute="bottom" constant="2" id="1Pl-Mh-JFg"/>
+                        <constraint firstItem="qfK-Ra-kYK" firstAttribute="height" secondItem="SAj-rF-IR3" secondAttribute="height" id="3cl-Fs-Bd8"/>
+                        <constraint firstItem="qfK-Ra-kYK" firstAttribute="top" secondItem="SAj-rF-IR3" secondAttribute="bottom" constant="2" id="4Jr-Dw-uPn"/>
+                        <constraint firstItem="qfK-Ra-kYK" firstAttribute="top" secondItem="SAj-rF-IR3" secondAttribute="bottom" constant="2" id="9r7-xI-bEi"/>
+                        <constraint firstItem="SAj-rF-IR3" firstAttribute="width" secondItem="YbR-ir-ta4" secondAttribute="width" id="Dvl-h5-TEk"/>
+                        <constraint firstItem="4CV-Xz-ldI" firstAttribute="leading" secondItem="Xe7-XF-bcu" secondAttribute="leading" id="FqP-bS-Fcj"/>
+                        <constraint firstAttribute="trailing" secondItem="SAj-rF-IR3" secondAttribute="trailing" id="JON-2D-75i"/>
+                        <constraint firstAttribute="bottom" secondItem="qfK-Ra-kYK" secondAttribute="bottom" id="JZ8-uK-u3e"/>
+                        <constraint firstItem="SAj-rF-IR3" firstAttribute="top" secondItem="Xe7-XF-bcu" secondAttribute="top" id="Lmi-VM-cTQ"/>
+                        <constraint firstItem="SAj-rF-IR3" firstAttribute="leading" secondItem="YbR-ir-ta4" secondAttribute="trailing" constant="2" id="QEV-VP-zwC"/>
+                        <constraint firstItem="YbR-ir-ta4" firstAttribute="leading" secondItem="Xe7-XF-bcu" secondAttribute="leading" id="QYa-O1-08r"/>
+                        <constraint firstItem="YbR-ir-ta4" firstAttribute="top" secondItem="Xe7-XF-bcu" secondAttribute="top" id="Qmg-N4-11U"/>
+                        <constraint firstItem="qfK-Ra-kYK" firstAttribute="leading" secondItem="4CV-Xz-ldI" secondAttribute="trailing" constant="2" id="XUy-d6-yYQ"/>
+                        <constraint firstItem="qfK-Ra-kYK" firstAttribute="width" secondItem="4CV-Xz-ldI" secondAttribute="width" id="ZHc-Hv-s7T"/>
+                        <constraint firstAttribute="bottom" secondItem="4CV-Xz-ldI" secondAttribute="bottom" id="h6c-sS-giM"/>
+                        <constraint firstItem="4CV-Xz-ldI" firstAttribute="top" secondItem="YbR-ir-ta4" secondAttribute="bottom" constant="2" id="o6L-gn-4zy"/>
+                        <constraint firstItem="4CV-Xz-ldI" firstAttribute="height" secondItem="YbR-ir-ta4" secondAttribute="height" id="s7r-Pt-Pp4"/>
+                        <constraint firstAttribute="trailing" secondItem="qfK-Ra-kYK" secondAttribute="trailing" id="uo7-dL-UxH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Eh-PH-uf6">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RY0-o7-uxR">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="SgM-2q-puA">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Eh-PH-uf6" secondAttribute="bottom" id="42P-No-r8s"/>
+                <constraint firstItem="Xe7-XF-bcu" firstAttribute="bottom" secondItem="MKP-4z-JYQ" secondAttribute="bottom" id="43i-zQ-aIP"/>
+                <constraint firstItem="SgM-2q-puA" firstAttribute="top" secondItem="MKP-4z-JYQ" secondAttribute="top" id="ERn-PJ-dwF"/>
+                <constraint firstItem="Xe7-XF-bcu" firstAttribute="top" secondItem="MKP-4z-JYQ" secondAttribute="top" id="Ie6-Aj-oWa"/>
+                <constraint firstItem="SgM-2q-puA" firstAttribute="leading" secondItem="MKP-4z-JYQ" secondAttribute="leading" id="MPx-hH-Sxi"/>
+                <constraint firstItem="2Eh-PH-uf6" firstAttribute="leading" secondItem="MKP-4z-JYQ" secondAttribute="leading" id="aGa-Pa-TH2"/>
+                <constraint firstAttribute="trailing" secondItem="SgM-2q-puA" secondAttribute="trailing" id="bKc-bk-zDW"/>
+                <constraint firstAttribute="bottom" secondItem="SgM-2q-puA" secondAttribute="bottom" id="dbj-dW-O32"/>
+                <constraint firstItem="Xe7-XF-bcu" firstAttribute="leading" secondItem="MKP-4z-JYQ" secondAttribute="leading" id="mYS-0R-uPk"/>
+                <constraint firstItem="2Eh-PH-uf6" firstAttribute="top" secondItem="MKP-4z-JYQ" secondAttribute="top" id="qMJ-04-IH1"/>
+                <constraint firstAttribute="trailing" secondItem="2Eh-PH-uf6" secondAttribute="trailing" id="qbV-yT-sJy"/>
+                <constraint firstItem="Xe7-XF-bcu" firstAttribute="trailing" secondItem="MKP-4z-JYQ" secondAttribute="trailing" id="wpd-1Z-K8F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageViewContainer" destination="Xe7-XF-bcu" id="5Qr-dM-qLX"/>
+                <outlet property="mainPlaceholderImageView" destination="RY0-o7-uxR" id="Vf9-eo-GVr"/>
+                <outlet property="placeholderViewContainer" destination="2Eh-PH-uf6" id="NDJ-Af-hdc"/>
+                <outletCollection property="imageViews" destination="YbR-ir-ta4" id="Ze1-m0-S1X"/>
+                <outletCollection property="imageViews" destination="SAj-rF-IR3" id="AF6-7p-Ari"/>
+                <outletCollection property="imageViews" destination="4CV-Xz-ldI" id="MwJ-2A-QQF"/>
+                <outletCollection property="imageViews" destination="qfK-Ra-kYK" id="xTz-wz-UMW"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="290"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatarPlaceholder" width="200" height="200"/>
+    </resources>
+</document>

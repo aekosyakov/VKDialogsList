@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o1S-tk-wvF" customClass="VKTUserMessageContentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCj-Bx-Dxt" userLabel="Text Container">
+                    <rect key="frame" x="0.0" y="0.0" width="365" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUw-HY-xqX">
+                            <rect key="frame" x="0.0" y="0.0" width="365" height="40"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo1-rx-i3Y">
+                            <rect key="frame" x="0.0" y="40" width="365" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WUw-HY-xqX" firstAttribute="top" secondItem="WCj-Bx-Dxt" secondAttribute="top" id="6hg-ch-Vzo"/>
+                        <constraint firstItem="vo1-rx-i3Y" firstAttribute="top" secondItem="WUw-HY-xqX" secondAttribute="bottom" id="FkS-eG-SRM"/>
+                        <constraint firstItem="vo1-rx-i3Y" firstAttribute="leading" secondItem="WCj-Bx-Dxt" secondAttribute="leading" id="QOq-Tw-Pyr"/>
+                        <constraint firstAttribute="bottom" secondItem="vo1-rx-i3Y" secondAttribute="bottom" id="bv9-Fh-uLK"/>
+                        <constraint firstItem="WUw-HY-xqX" firstAttribute="leading" secondItem="WCj-Bx-Dxt" secondAttribute="leading" id="rQg-Jm-KvN"/>
+                        <constraint firstAttribute="trailing" secondItem="WUw-HY-xqX" secondAttribute="trailing" id="tJo-eb-hi9"/>
+                        <constraint firstAttribute="trailing" secondItem="vo1-rx-i3Y" secondAttribute="trailing" id="wgS-m2-MJD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgo-DU-HEe">
+                    <rect key="frame" x="365" y="0.5" width="10" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="jBh-jD-vNh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WCj-Bx-Dxt" firstAttribute="top" secondItem="o1S-tk-wvF" secondAttribute="top" id="5iN-WC-c4d"/>
+                <constraint firstItem="hgo-DU-HEe" firstAttribute="leading" secondItem="WCj-Bx-Dxt" secondAttribute="trailing" id="BOo-JJ-yfb"/>
+                <constraint firstAttribute="bottom" secondItem="WCj-Bx-Dxt" secondAttribute="bottom" constant="10" id="DYr-4f-8gY"/>
+                <constraint firstAttribute="trailing" secondItem="hgo-DU-HEe" secondAttribute="trailing" id="FR1-2E-ZQo"/>
+                <constraint firstItem="WCj-Bx-Dxt" firstAttribute="leading" secondItem="o1S-tk-wvF" secondAttribute="leading" id="Y0A-74-p79"/>
+                <constraint firstItem="hgo-DU-HEe" firstAttribute="height" secondItem="WCj-Bx-Dxt" secondAttribute="height" id="dRd-Qe-YC3"/>
+                <constraint firstItem="hgo-DU-HEe" firstAttribute="top" secondItem="o1S-tk-wvF" secondAttribute="top" id="eOD-Ss-trP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="attachmentLabel" destination="vo1-rx-i3Y" id="caq-Km-gcd"/>
+                <outlet property="statusContainerView" destination="hgo-DU-HEe" id="UEQ-j5-K7Z"/>
+                <outlet property="statusViewWidthConstraint" destination="jBh-jD-vNh" id="9Dn-us-2WM"/>
+                <outlet property="textLabel" destination="WUw-HY-xqX" id="g61-gO-8Fp"/>
+            </connections>
+            <point key="canvasLocation" x="94.5" y="499"/>
+        </view>
+    </objects>
+</document>

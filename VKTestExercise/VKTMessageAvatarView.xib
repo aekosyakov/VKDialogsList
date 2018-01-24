@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QLc-2C-3nG" customClass="VKTMessageAvatarView">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQs-3c-8xV">
+                    <rect key="frame" x="7" y="7" width="66" height="66"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFo-gs-E1O">
+                    <rect key="frame" x="57" y="53" width="16" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="KuD-pA-6lf"/>
+                        <constraint firstAttribute="height" constant="20" id="fi0-4t-VB5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NQs-3c-8xV" firstAttribute="top" secondItem="QLc-2C-3nG" secondAttribute="top" constant="7" id="BLW-r4-8Vl"/>
+                <constraint firstItem="NQs-3c-8xV" firstAttribute="leading" secondItem="QLc-2C-3nG" secondAttribute="leading" constant="7" id="J6P-AC-pmb"/>
+                <constraint firstAttribute="trailing" secondItem="bFo-gs-E1O" secondAttribute="trailing" constant="7" id="OKe-Y9-VVk"/>
+                <constraint firstAttribute="trailing" secondItem="NQs-3c-8xV" secondAttribute="trailing" constant="7" id="OLs-Mg-ovK"/>
+                <constraint firstAttribute="bottom" secondItem="NQs-3c-8xV" secondAttribute="bottom" constant="7" id="cHy-4P-oEr"/>
+                <constraint firstAttribute="bottom" secondItem="bFo-gs-E1O" secondAttribute="bottom" constant="7" id="wcG-H7-lMT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarContainerView" destination="NQs-3c-8xV" id="PNk-hc-fGr"/>
+                <outlet property="onlineStatusContainerView" destination="bFo-gs-E1O" id="oI9-xS-lxW"/>
+            </connections>
+            <point key="canvasLocation" x="109" y="82"/>
+        </view>
+    </objects>
+</document>

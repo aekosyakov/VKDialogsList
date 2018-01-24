@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oGv-Xt-dh7" customClass="VKTMessageView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogg-rt-mLP" userLabel="Left">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="kD0-Xo-a0p"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULp-aW-iTu" userLabel="Center">
+                    <rect key="frame" x="80" y="0.0" width="295" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBS-RC-b8F" userLabel="Top">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="htw-O6-LpG"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nri-Aq-tPe" userLabel="Bottom">
+                            <rect key="frame" x="0.0" y="30" width="295" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Nri-Aq-tPe" secondAttribute="bottom" id="08T-Xo-Uej"/>
+                        <constraint firstItem="cBS-RC-b8F" firstAttribute="top" secondItem="ULp-aW-iTu" secondAttribute="top" id="MJk-an-N1P"/>
+                        <constraint firstItem="cBS-RC-b8F" firstAttribute="leading" secondItem="ULp-aW-iTu" secondAttribute="leading" id="buh-j8-bgV"/>
+                        <constraint firstAttribute="trailing" secondItem="Nri-Aq-tPe" secondAttribute="trailing" id="dvs-Q0-G6e"/>
+                        <constraint firstItem="Nri-Aq-tPe" firstAttribute="top" secondItem="cBS-RC-b8F" secondAttribute="bottom" id="erF-XC-qR0"/>
+                        <constraint firstAttribute="trailing" secondItem="cBS-RC-b8F" secondAttribute="trailing" id="rIS-t7-pzh"/>
+                        <constraint firstItem="Nri-Aq-tPe" firstAttribute="leading" secondItem="ULp-aW-iTu" secondAttribute="leading" id="vCT-59-kQs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkr-6X-tlK">
+                    <rect key="frame" x="80" y="79" width="295" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WfO-ut-WLS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ULp-aW-iTu" firstAttribute="leading" secondItem="ogg-rt-mLP" secondAttribute="trailing" id="6jN-Th-MUc"/>
+                <constraint firstItem="Vkr-6X-tlK" firstAttribute="leading" secondItem="oGv-Xt-dh7" secondAttribute="leading" constant="80" id="Gfl-Yr-UUY"/>
+                <constraint firstItem="ogg-rt-mLP" firstAttribute="bottom" secondItem="oGv-Xt-dh7" secondAttribute="bottom" id="P02-qd-vew"/>
+                <constraint firstAttribute="bottom" secondItem="Vkr-6X-tlK" secondAttribute="bottom" id="PdL-I8-UYT"/>
+                <constraint firstAttribute="trailing" secondItem="ULp-aW-iTu" secondAttribute="trailing" id="VJo-Us-yUN"/>
+                <constraint firstItem="ogg-rt-mLP" firstAttribute="top" secondItem="oGv-Xt-dh7" secondAttribute="top" id="WZ9-BU-izm"/>
+                <constraint firstAttribute="trailing" secondItem="Vkr-6X-tlK" secondAttribute="trailing" id="YfM-Se-u2J"/>
+                <constraint firstItem="ULp-aW-iTu" firstAttribute="bottom" secondItem="oGv-Xt-dh7" secondAttribute="bottom" id="bUN-aT-x3l"/>
+                <constraint firstItem="ULp-aW-iTu" firstAttribute="top" secondItem="oGv-Xt-dh7" secondAttribute="top" id="nfY-3u-nLM"/>
+                <constraint firstItem="ogg-rt-mLP" firstAttribute="leading" secondItem="oGv-Xt-dh7" secondAttribute="leading" id="yxJ-jK-cdA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomView" destination="Nri-Aq-tPe" id="xeK-76-74B"/>
+                <outlet property="leftView" destination="ogg-rt-mLP" id="hOq-NF-upU"/>
+                <outlet property="separatorConstraint" destination="WfO-ut-WLS" id="LB8-BV-lMf"/>
+                <outlet property="separatorView" destination="Vkr-6X-tlK" id="7bT-Go-FfN"/>
+                <outlet property="topView" destination="cBS-RC-b8F" id="Lox-eK-VYU"/>
+            </connections>
+            <point key="canvasLocation" x="73.5" y="358"/>
+        </view>
+    </objects>
+</document>

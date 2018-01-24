@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QZS-tX-diy" customClass="VKTAvatarView">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTz-ay-1Bt">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMQ-Gg-IYe" userLabel="1">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="IMQ-Gg-IYe" firstAttribute="leading" secondItem="uTz-ay-1Bt" secondAttribute="leading" id="6y1-Ow-dRv"/>
+                        <constraint firstAttribute="bottom" secondItem="IMQ-Gg-IYe" secondAttribute="bottom" id="9A4-mr-MGY"/>
+                        <constraint firstAttribute="trailing" secondItem="IMQ-Gg-IYe" secondAttribute="trailing" id="rAj-dc-ExW"/>
+                        <constraint firstItem="IMQ-Gg-IYe" firstAttribute="top" secondItem="uTz-ay-1Bt" secondAttribute="top" id="roT-OF-FdG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUS-p3-gZ9">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unloaded" translatesAutoresizingMaskIntoConstraints="NO" id="sYl-mk-gUi">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="sYl-mk-gUi" firstAttribute="leading" secondItem="hUS-p3-gZ9" secondAttribute="leading" id="04J-XZ-trt"/>
+                        <constraint firstItem="sYl-mk-gUi" firstAttribute="top" secondItem="hUS-p3-gZ9" secondAttribute="top" id="E7q-yo-rcY"/>
+                        <constraint firstAttribute="trailing" secondItem="sYl-mk-gUi" secondAttribute="trailing" id="GhJ-fy-BpP"/>
+                        <constraint firstAttribute="bottom" secondItem="sYl-mk-gUi" secondAttribute="bottom" id="anD-UC-Np4"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="65C-Il-Jjb">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hUS-p3-gZ9" secondAttribute="trailing" id="3Ag-gL-P6m"/>
+                <constraint firstItem="hUS-p3-gZ9" firstAttribute="leading" secondItem="QZS-tX-diy" secondAttribute="leading" id="Bi3-30-9Qs"/>
+                <constraint firstAttribute="trailing" secondItem="65C-Il-Jjb" secondAttribute="trailing" id="NDQ-jM-Xbl"/>
+                <constraint firstItem="hUS-p3-gZ9" firstAttribute="top" secondItem="QZS-tX-diy" secondAttribute="top" id="Nkh-DS-1sC"/>
+                <constraint firstItem="uTz-ay-1Bt" firstAttribute="trailing" secondItem="QZS-tX-diy" secondAttribute="trailing" id="aiD-R7-pmM"/>
+                <constraint firstAttribute="bottom" secondItem="65C-Il-Jjb" secondAttribute="bottom" id="f9H-tK-REu"/>
+                <constraint firstItem="65C-Il-Jjb" firstAttribute="leading" secondItem="QZS-tX-diy" secondAttribute="leading" id="fDK-bz-Jtr"/>
+                <constraint firstItem="uTz-ay-1Bt" firstAttribute="top" secondItem="QZS-tX-diy" secondAttribute="top" id="fUu-zJ-SvK"/>
+                <constraint firstItem="uTz-ay-1Bt" firstAttribute="bottom" secondItem="QZS-tX-diy" secondAttribute="bottom" id="l1m-qm-l3e"/>
+                <constraint firstItem="65C-Il-Jjb" firstAttribute="top" secondItem="QZS-tX-diy" secondAttribute="top" id="taj-8o-vm6"/>
+                <constraint firstItem="uTz-ay-1Bt" firstAttribute="leading" secondItem="QZS-tX-diy" secondAttribute="leading" id="xmS-Xs-D0j"/>
+                <constraint firstAttribute="bottom" secondItem="hUS-p3-gZ9" secondAttribute="bottom" id="zcJ-Pf-Ngj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageViewContainer" destination="uTz-ay-1Bt" id="cUJ-0l-9QH"/>
+                <outlet property="mainPlaceholderImageView" destination="sYl-mk-gUi" id="YaY-28-vS2"/>
+                <outlet property="placeholderViewContainer" destination="hUS-p3-gZ9" id="Shi-dE-4FN"/>
+                <outletCollection property="imageViews" destination="IMQ-Gg-IYe" id="8qx-RZ-bdJ"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="290"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatarPlaceholder" width="200" height="200"/>
+        <image name="unloaded" width="45" height="45"/>
+    </resources>
+</document>
