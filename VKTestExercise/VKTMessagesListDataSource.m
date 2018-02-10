@@ -14,7 +14,8 @@
 #import "NSIndexPath+Extensions.h"
 #import "VKTMessageCell.h"
 #import "VKTMessage+Extensions.h"
-#import "UITableView+MessageCell.m"
+#import "UITableView+MessageCell.h"
+#import "AppDelegate.h"
 
 @interface VKTMessagesListDataSource() <UITableViewDataSource, UITableViewDelegate, VKTFetchDelegate>
 @property (assign, nonatomic) BOOL connectionHadBreaks;
@@ -138,7 +139,7 @@
   if (editingStyle == UITableViewCellEditingStyleDelete) {
     [self showDeleteDialogSheetWithCompletion:^(BOOL delete) {
       if (delete) {
-        [self.context showProgressHUD];
+        [[AppDelegate topController] showProgressHUD];
         [self.fetcher deleteItemAtIndex:indexPath.row];
       }
     }];
@@ -160,7 +161,7 @@
 
 #pragma mark VKTFetchDelegate
 - (void)fetcherDidFinishWithResult:(id <VKTFetchResultProtocol >)result {
-    [self.context hideProgressHUDWithDelay:0.3];
+    [[AppDelegate topController] hideProgressHUDWithDelay:0.3];
     dispatch_async(dispatch_get_main_queue(), ^{
         if (!result) {
             [self.tableView endRefreshing];
@@ -189,7 +190,7 @@
 
 
 - (void)showDeleteDialogSheetWithCompletion:(void(^)(BOOL delete))completion {
-  [self.context showActionSheetControllerWithTitle:NSLocalizedString(@"Wants_to_reset_history?", nil)
+  [[AppDelegate topController] showActionSheetControllerWithTitle:NSLocalizedString(@"Wants_to_reset_history?", nil)
                               actionTitles:@[NSLocalizedString(@"Reset History", nil)]
                                 completion:^(NSUInteger pressedIndex) {
                                   if (completion) {

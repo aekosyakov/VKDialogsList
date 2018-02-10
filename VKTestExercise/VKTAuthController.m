@@ -21,15 +21,18 @@
   [super viewDidLoad];
   [self setupView];
   [self setupAuthCallback];
-  
+  [self startWorking];
+}
+    
+- (void)startWorking {
   NSString *token = [VKTUserToken token];
   if (token.length > 0) {
-      [self authorizeUser];
-  }
+    [self authorizeUser];
+   }
 
   [VKTNetworkReachability startObserving:^(BOOL reachable) {
     [self finishSuccess:NO];
-  }];
+   }];
 }
 
 - (void)setupAuthCallback {
@@ -38,11 +41,31 @@
       [self_ authServiceDidFinishWithResult:result];
   };
 }
+    
+- (void)authServiceDidFinishWithResult:(id <VKTAuthResult> )result {
+    switch (result.status) {
+        case VKTAuthStatusSuccess: {
+            [self finishSuccess:YES];
+        } break;
+        case VKTAuthStatusError:
+        case VKTAuthStatusUnknown: {
+            [self finishSuccess:NO];
+            //show error
+        } break;
+    }
+}
+    
+- (void)finishSuccess:(BOOL)success {
+    [self hideProgressHUD];
+    if (self.didFinishCompletion) {
+        self.didFinishCompletion(success);
+    }
+}
 
 
 - (void)setupView {
   self.view.backgroundColor = [VKTColor vkMainColor];
-  self.logoImageView.image = [VKTImage vkLogoImage];
+  self.logoImageView.image  = [VKTImage vkLogoImage];
 
   [self.loginButton setTitle:NSLocalizedString(@"Login", nil) forState:UIControlStateNormal];
   [self.loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -64,26 +87,5 @@
 - (void)loginButtonDidPress:(UIButton *)button {
   [self authorizeUser];
 }
-
-
-- (void)authServiceDidFinishWithResult:(id <VKTAuthResult> )result {
-  switch (result.status) {
-      case VKTAuthStatusSuccess: {
-          [self finishSuccess:YES];
-      } break;
-      case VKTAuthStatusError:
-      case VKTAuthStatusUnknown: {
-          [self finishSuccess:NO];
-          //show error
-      } break;
-  }
-}
-
-- (void)finishSuccess:(BOOL)success {
-  [self hideProgressHUD];
-  if (self.didFinishCompletion) {
-    self.didFinishCompletion(success);
-  }
-}
-
+    
 @end

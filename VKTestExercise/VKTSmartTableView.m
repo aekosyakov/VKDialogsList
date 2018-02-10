@@ -20,8 +20,8 @@ static CGFloat const kFooterHeight = 70.f;
 @property (strong, nonatomic) UIRefreshControl *refreshControll;
 @property (copy, nonatomic) void (^didStartRefreshCompletion)(void);
 @end
-@implementation VKTSmartTableView
 
+@implementation VKTSmartTableView
 
 - (void)atttachRefreshControlWithCompletion:(void(^)(void))completion {
     if (self.refreshControll != nil) {
@@ -85,7 +85,6 @@ static CGFloat const kFooterHeight = 70.f;
         [self attachProgressFooterIfNeeded];
     }
 }
-
 
 - (void)startUploadingProgress {
     [self attachProgressFooterIfNeeded];

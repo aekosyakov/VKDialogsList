@@ -13,7 +13,6 @@
 @property (strong, nonatomic) id <VKTFetcherProtocol > fetcher;
 @property (strong, nonatomic) VKTSmartTableView *tableView;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
-@property (strong, nonatomic) UIViewController *context;
 - (void)refreshData;
 - (void)resetData;
 @end

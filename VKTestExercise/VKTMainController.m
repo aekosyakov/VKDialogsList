@@ -16,8 +16,8 @@
 @implementation VKTOfflineModeConditions
 + (BOOL)confirmed {
     BOOL networkIsRechable = [VKTNetworkReachability isReachable];
-    BOOL userWasAuthorized = [VKTUserToken token].length > 0;
-    BOOL hasPreloadedData = [VKTPeerIDs getActualIDs].count > 0;
+    BOOL userWasAuthorized = @([VKTUserToken token].length).boolValue;
+    BOOL hasPreloadedData  = @([VKTPeerIDs getActualIDs].count).boolValue;
     return !networkIsRechable && userWasAuthorized && hasPreloadedData;
 }
 @end
@@ -75,7 +75,9 @@
 
 #pragma mark NSNotifications
 - (void)setupObservers {
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startWorking) name:kVKTAuthServiceDidLogoutNotificationName object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(startWorking) name:kVKTAuthServiceDidLogoutNotificationName
+                                             object:nil];
 }
 - (void)removeObservers {
   [[NSNotificationCenter defaultCenter] removeObserver:self];

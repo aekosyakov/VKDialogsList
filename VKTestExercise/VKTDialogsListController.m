@@ -44,7 +44,6 @@
   self.fetchDataSource = [[VKTMessagesListDataSource alloc] init];
   self.fetchDataSource.fetcher = [[VKTMessagesListFetcher alloc] initWithMessageService:self.messagesService];
   self.fetchDataSource.tableView = self.tableView;
-  self.fetchDataSource.context = self;
     
   [self.fetchDataSource refreshData];
 }
